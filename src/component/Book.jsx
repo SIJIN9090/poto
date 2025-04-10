@@ -51,7 +51,7 @@ const Book = () => {
         disableFlipOnTouch={true}
         onFlip={handleFlip} // 페이지가 넘어갈 때 크기 변경
         style={{
-          transform: isOpened ? "scale(1.5)" : "scale(1)", // 페이지 넘기면 크기 확대
+          transform: isOpened ? "scale(1.3)" : "scale(1)", // 페이지 넘기면 크기 확대
           transition: "transform 0.5s ease-in-out", // 부드러운 확대/축소 효과
         }}
       >
