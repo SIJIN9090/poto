@@ -9,6 +9,7 @@ import SkillsPage_B from "./pages/SkillsPage_B";
 import ProjectsPage_A from "./pages/ProjectsPage_A";
 import ProjectsPage_B from "./pages/ProjectsPage_B";
 import ContactPage from "./pages/ContactPage";
+import FinalPage from "./pages/FinalPage";
 
 const Book = () => {
   const [isOpened, setIsOpened] = useState(false);
@@ -109,6 +110,7 @@ const Book = () => {
           <ProjectsPage_B />
 
           <ContactPage />
+          <FinalPage />
         </HTMLFlipBook>
       </div>
     </div>

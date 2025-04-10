@@ -40,7 +40,7 @@ const ContactPage = React.forwardRef((props, ref) => (
       </div>
 
       {/* 선택 사항: 간단한 연락처 폼 추가 (별도의 처리 로직 필요) */}
-      {/* <h2>Send me a message</h2>
+      <h2>Send me a message</h2>
       <form>
         <div>
           <label htmlFor="name">Name:</label>
@@ -55,7 +55,7 @@ const ContactPage = React.forwardRef((props, ref) => (
           <textarea id="message" name="message"></textarea>
         </div>
         <button type="submit">Send</button>
-      </form> */}
+      </form>
     </section>
   </div>
 ));
