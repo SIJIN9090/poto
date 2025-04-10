@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Gaegu&display=swap");
-@keyframes bookScale {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.2); /* 크기를 1.2배로 키움 */
-  }
-}
 
 * {
   margin: 0;
@@ -20,13 +12,65 @@ body {
   color: #333;
 }
 
-.cover {
-  background: linear-gradient(to bottom right, #fceabb, #f8b500);
-  height: 100%;
+.main_back {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 154, 162, 0.4),
+    rgba(255, 183, 178, 0.4),
+    rgba(255, 218, 193, 0.4),
+    rgba(226, 240, 203, 0.4),
+    rgba(181, 234, 215, 0.4),
+    rgba(199, 206, 234, 0.4)
+  );
+  background-size: 400% 400%;
+  animation: rainbowFlow 10s ease-in-out infinite alternate;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+@keyframes rainbowFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.cover {
+  background: linear-gradient(to bottom right, #ffd1dc, #b5ead7);
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  gap: 1rem;
+  box-shadow: inset 10px 0 10px rgba(0, 0, 0, 0.2),
+    inset 15px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cover h1 {
+  margin-top: 200px;
+  font-size: 4em;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.cover p {
+  font-size: 2em;
+  opacity: 0.9;
+  margin: 0;
 }
 
 .cover-title {
@@ -44,4 +88,17 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+}
+
+.wave-marker {
+  position: absolute;
+  left: calc(50% - 68px);
+  top: calc(50% + 440px);
+  transform: translateY(-50%) rotate(-40deg);
+  transform-origin: center;
+  filter: drop-shadow(-5px 0 5px rgba(0, 0, 0, 0.4));
+}
+
+.book-inner {
+  position: relative;
 }
