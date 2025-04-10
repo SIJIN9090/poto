@@ -1,0 +1,38 @@
+/* SkillsPage.css */
+.skills-page {
+  padding: 20px;
+}
+
+.skills-section {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.skills-section h1 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.skills-section p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list li {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 1rem;
+}
