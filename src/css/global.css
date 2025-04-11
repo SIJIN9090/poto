@@ -212,3 +212,20 @@ body {
     transform: translateX(1000px) scale(1.2);
   }
 }
+
+.flog {
+  transform: translateX(450px);
+}
+
+.speech-bubble {
+  position: absolute;
+  background: #ffffff;
+  border: 2px solid #7ed957;
+  border-radius: 1em;
+  padding: 10px 15px;
+  max-width: 300px;
+  font-size: 14px;
+  color: #333;
+  bottom: 45px;
+  left: 200px;
+}

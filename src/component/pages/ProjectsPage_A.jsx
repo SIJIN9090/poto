@@ -10,12 +10,18 @@ const ProjectsPage = React.forwardRef((props, ref) => (
         {/* 프로젝트 데이터를 배열로 관리하고 map 함수를 사용하여 렌더링하는 것이 일반적입니다. */}
         <div className="project-item">
           <h3>OFFIME 근태관리 시스템</h3>
-          <img
-            src="/images/appmain.png"
-            alt="프로젝트 1 이미지"
-            className="project-image"
-            width={140}
-          />
+          <a
+            href="https://github.com/gadlely/Offime/tree/expense_sijin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/images/appmain.png"
+              alt="프로젝트 1 이미지"
+              className="project-image"
+              width={140}
+            />
+          </a>
           <p>
             {" "}
             사내 직원들의 출퇴근, 휴가, 근무 시간 등을 효율적으로 관리할 수 있는
