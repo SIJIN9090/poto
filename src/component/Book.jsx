@@ -55,7 +55,7 @@ const Book = () => {
       <div
         className="main_back"
         style={{
-          transform: isOpened ? "scale(1.2)" : "scale(0.9)",
+          transform: isOpened ? "scale(1.1)" : "scale(0.9)",
           transition: "transform 0.6s ease-in-out",
         }}
       >
