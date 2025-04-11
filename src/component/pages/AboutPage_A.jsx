@@ -2,7 +2,7 @@ import React from "react";
 import "../../css/AboutPage.css";
 
 const AboutPage = React.forwardRef((props, ref) => (
-  <div ref={ref} className="All_page about-page">
+  <div ref={ref} className="All_page about-page FA-page ">
     <h1>About Me</h1>
     <section className="about-section">
       <img src="/images/sijin.jpg" width={200} alt="박시진" />

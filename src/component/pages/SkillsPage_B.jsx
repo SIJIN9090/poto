@@ -2,7 +2,7 @@ import React from "react";
 import "../../css/SkillsPage.css"; // 스타일링을 위한 CSS 파일
 
 const SkillsPage = React.forwardRef((props, ref) => (
-  <div ref={ref} className="All_page skills-page">
+  <div ref={ref} className="All_page skills-page B-page ">
     <section className="skills-section">
       <h2>✨ 사용 가능한 기술</h2>
       <ul className="skills-list">

@@ -2,7 +2,7 @@ import React from "react";
 import "../../css/AboutPage.css";
 
 const AboutPage = React.forwardRef((props, ref) => (
-  <div ref={ref} className="All_page about-page">
+  <div ref={ref} className="All_page about-page B-page ">
     <section className="about-section">
       <h4>나의 여정 ✨</h4>
       <p>

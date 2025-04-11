@@ -8,7 +8,8 @@ import SkillsPage_A from "./pages/SkillsPage_A";
 import SkillsPage_B from "./pages/SkillsPage_B";
 import ProjectsPage_A from "./pages/ProjectsPage_A";
 import ProjectsPage_B from "./pages/ProjectsPage_B";
-import ContactPage from "./pages/ContactPage";
+import ContactPage_A from "./pages/ContactPage_A";
+import ContactPage_B from "./pages/ContactPage_B";
 import FinalPage from "./pages/FinalPage";
 
 const Book = () => {
@@ -108,8 +109,8 @@ const Book = () => {
           <SkillsPage_B />
           <ProjectsPage_A />
           <ProjectsPage_B />
-
-          <ContactPage />
+          <ContactPage_A />
+          <ContactPage_B />
           <FinalPage />
         </HTMLFlipBook>
       </div>
