@@ -122,3 +122,93 @@ body {
   box-shadow: inset -10px 0 10px rgba(0, 0, 0, 0.2),
     inset -15px 0 10px rgba(0, 0, 0, 0.2);
 }
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.guide-character {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.wizard-svg {
+  transform: translateX(1900px);
+  transition: transform 2s ease-in-out;
+}
+
+.wizard-svg.move {
+  transform: translateX(100px);
+}
+
+.guide-text {
+  position: absolute;
+  bottom: 140px;
+  right: -190px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  max-width: 180px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+  pointer-events: none;
+}
+
+.guide-text.show {
+  opacity: 1;
+}
+
+.guide-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.magic-effect {
+  position: fixed;
+  bottom: 80px;
+  left: 0;
+  opacity: 0;
+  animation: magicTrail 2s ease-out forwards;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.magic-effect.show {
+  animation: magicTrail 2.2s ease-out forwards;
+}
+
+@keyframes magicTrail {
+  0% {
+    opacity: 0;
+    transform: translateX(0px) scale(1);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(1000px) scale(1.2);
+  }
+}
