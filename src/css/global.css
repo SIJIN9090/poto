@@ -152,13 +152,13 @@ body {
 }
 
 .wizard-svg.move {
-  transform: translateX(100px);
+  transform: translateX(50px);
 }
 
 .guide-text {
   position: absolute;
   bottom: 140px;
-  right: -190px;
+  right: -140px;
   background: #fff;
   border: 2px solid #ccc;
   border-radius: 20px;
@@ -185,33 +185,6 @@ body {
   border-color: #fff transparent transparent transparent;
 }
 
-.magic-effect {
-  position: fixed;
-  bottom: 80px;
-  left: 0;
-  opacity: 0;
-  animation: magicTrail 2s ease-out forwards;
-  pointer-events: none;
-  z-index: 999;
-}
-
-.magic-effect.show {
-  animation: magicTrail 2.2s ease-out forwards;
-}
-
-@keyframes magicTrail {
-  0% {
-    opacity: 0;
-    transform: translateX(0px) scale(1);
-  }
-  30% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(1000px) scale(1.2);
-  }
-}
 
 .flog {
   transform: translateX(450px);

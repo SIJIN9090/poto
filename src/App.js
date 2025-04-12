@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import LoadingCharacter from "./component/LoadingCharacter";
-import Book from "./component/Book";
+import BookBackground from "./component/BookBackground";
 import "./css/global.css";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className={loading ? "" : "fade-in"}>
-      {loading ? <LoadingCharacter /> : <Book />}
+      {loading ? <LoadingCharacter /> : <BookBackground />}
     </div>
   );
 }
