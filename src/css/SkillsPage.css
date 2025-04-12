@@ -1,0 +1,58 @@
+/* SkillsPage.css */
+
+.skills-page {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#e0f7fa, #f0f4c3); /* 산뜻한 파스텔 배경 */
+  font-family: "Gaegu", cursive;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.skills-section {
+  background: #ffffffdd;
+  border: 3px dashed #a5d6a7;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 2px 2px 6px rgba(100, 80, 50, 0.1);
+}
+
+.skills-section h1 {
+  font-size: 2.5rem;
+  color: #388e3c;
+  margin-bottom: 1rem;
+  border-bottom: 2px dashed #81c784;
+  padding-bottom: 0.5rem;
+}
+
+.skills-section p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #4e342e;
+  margin-bottom: 1.5rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  background: #f1f8e9;
+  border: 2px dashed #aed581;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  font-family: "Gowun Dodum", sans-serif;
+  color: #33691e;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+}

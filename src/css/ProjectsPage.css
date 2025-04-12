@@ -1,0 +1,92 @@
+/* ProjectsPage.css */
+
+.projects-page {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #e0f7fa, #f1f8e9);
+
+  font-family: "Cafe24ClassicType", "Nanum Pen Script", cursive;
+}
+
+.projects-section {
+  padding: 2rem;
+  border: 3px dashed #aed581;
+  border-radius: 20px;
+  background-color: #ffffffcc;
+  text-align: center;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.projects-section h1 {
+  font-size: 2.5rem;
+  color: #558b2f;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px dashed #aed581;
+  padding-bottom: 0.5rem;
+}
+
+.projects-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4e342e;
+  margin-bottom: 2rem;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-item {
+  background: #fef9f4;
+  border: 2px dashed #ffcba4;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  font-family: "Gowun Dodum", sans-serif;
+  animation: fadeInUp 0.5s ease both;
+}
+
+.project-item:hover {
+  transform: scale(1.02);
+}
+
+.project-item h3 {
+  font-size: 1.4rem;
+  color: #6d4c41;
+  margin-bottom: 0.8rem;
+}
+
+.project-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4e342e;
+  margin-bottom: 0.5rem;
+}
+
+.project-item strong {
+  font-weight: bold;
+  color: #8d6e63;
+}
+
+/* 애니메이션 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-image {
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
