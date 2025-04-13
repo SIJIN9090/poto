@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Book from "./Book";
 import "../css/global.css";
 import ThanksPage from "./ThanksPage";
+import MeteorShower from "./MeteorShower";
 
 const BookBackground = () => {
   const [isOpened, setIsOpened] = useState(false);
@@ -139,10 +140,11 @@ const BookBackground = () => {
             fill="none"
           />
         </svg>
-
+        <MeteorShower />
         <Book ref={bookRef} onFlip={handleFlip} />
         {isLastPage && <ThanksPage />}
       </div>
+    
     </div>
   );
 };
