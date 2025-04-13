@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/ProjectsPage.css"; // 스타일링을 위한 CSS 파일
+import "../../css/ProjectsPage.css"; 
 
 const ProjectsPage = React.forwardRef((props, ref) => (
   <div ref={ref} className="All_page projects-page B-page">
